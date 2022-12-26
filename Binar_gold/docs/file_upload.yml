@@ -1,0 +1,17 @@
+tags:
+  - name : File Processing
+consumes:
+  - multipart/form-data  
+parameters:
+  - name: file
+    in: formData
+    type: file
+    required: true
+    description: Silahkan Upload File CSV mu (Pastikan data yang ingin di cleansing berada pada kolom pertama ya)
+responses:
+  '200':
+    description: Succesfull response
+  '400':
+    description: Bad Request
+  '500':
+    description: Internal Server Error
